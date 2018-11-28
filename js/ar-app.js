@@ -43,19 +43,19 @@ scene.addEventListener("ar-camera.error", function() {
 
 });
 
-function showAlertView() {
+// function showAlertView() {
 
-    var alert = document.querySelector('#alert-popover');
-    alert.style.display = 'inline-block';
+//     var alert = document.querySelector('#alert-popover');
+//     alert.style.display = 'inline-block';
 
-}
+// }
 
-function hideAlertView() {
+// function hideAlertView() {
 
-    var alert = document.querySelector('#alert-popover');
-    alert.style.display = 'none';
+//     var alert = document.querySelector('#alert-popover');
+//     alert.style.display = 'none';
 
-}
+// }
 
 function copyLink() {
 
