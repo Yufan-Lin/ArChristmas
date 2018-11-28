@@ -1,7 +1,6 @@
 #alert-popover {
     background-color: rgb(236, 215, 191);
     position: fixed;
-    display: none;
     border-radius: 20px;
 
     top: 25%;
