@@ -19,7 +19,7 @@ treeModel.addEventListener('model-loaded', () => {
     }
 
 });
-*/
+
 var video = document.querySelector('video');
 video.addEventListener('loaded', function() {
 
@@ -34,6 +34,7 @@ video.addEventListener('loaded', function() {
     }
 
 });
+*/
 
 var scene = document.querySelector('a-scene');
 
