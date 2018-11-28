@@ -50,12 +50,12 @@ scene.addEventListener("ar-camera.error", function() {
 
 // }
 
-// function hideAlertView() {
+function hideAlertView() {
 
-//     var alert = document.querySelector('#alert-popover');
-//     alert.style.display = 'none';
+    var alert = document.querySelector('#alert-popover');
+    alert.style.display = 'none';
 
-// }
+}
 
 function copyLink() {
 
