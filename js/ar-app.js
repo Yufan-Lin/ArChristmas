@@ -1,7 +1,7 @@
 
 var input = document.querySelector('input');
 input.value = document.URL;
-
+/*
 var treeModel = document.querySelector('#tree-model');
 treeModel.addEventListener('model-loaded', () => {
     console.log('Model has loaded.');
@@ -19,7 +19,7 @@ treeModel.addEventListener('model-loaded', () => {
     }
 
 });
-
+*/
 var video = document.querySelector('video');
 video.addEventListener('loaded', function() {
 
@@ -43,12 +43,12 @@ scene.addEventListener("ar-camera.error", function() {
 
 });
 
-// function showAlertView() {
+function showAlertView() {
 
-//     var alert = document.querySelector('#alert-popover');
-//     alert.style.display = 'inline-block';
+    var alert = document.querySelector('#alert-popover');
+    alert.style.display = 'inline-block';
 
-// }
+}
 
 function hideAlertView() {
 
