@@ -58,6 +58,11 @@ function hideAlertView() {
 
 }
 
+function playSound() {
+    var sound = document.querySelector('[sound]');
+    sound.components.sound.playSound();
+}
+
 function copyLink() {
 
     var input = document.querySelector('input');
