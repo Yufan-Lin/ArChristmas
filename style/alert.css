@@ -2,7 +2,7 @@
     background-color: rgb(236, 215, 191);
     position: fixed;
     border-radius: 20px;
-
+    display: none;
     top: 10%;
     left: 0;
     right: 0;

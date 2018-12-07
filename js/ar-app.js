@@ -1,6 +1,13 @@
-
 var input = document.querySelector('input');
 input.value = document.URL;
+
+var scene = document.querySelector('a-scene');
+scene.addEventListener('loaded', showAlertView());
+/*
+var sound = document.querySelector('#christmas-sound-entity');
+sound.addEventListener('sound-loaded', showAlertView());
+*/
+
 /*
 var treeModel = document.querySelector('#tree-model');
 treeModel.addEventListener('model-loaded', () => {
@@ -23,48 +30,36 @@ treeModel.addEventListener('model-loaded', () => {
 var video = document.querySelector('video');
 video.addEventListener('loaded', function() {
 
-    if (video != null) {
-        console.log('camera is avaliable.');
-        hideAlertView();
-
-    } else {
-        console.log('camera is not avaliable.');
-
-
-    }
+    showAlertView();
 
 });
 */
 
-var scene = document.querySelector('a-scene');
-
 scene.addEventListener("ar-camera.error", function() {
-
     console.log("Camera is error");
-
 });
 
 function showAlertView() {
-
-    var alert = document.querySelector('#alert-popover');
-    alert.style.display = 'inline-block';
-
+    setTimeout(() => {
+        var alert = document.querySelector('#alert-popover');
+        alert.style.display = 'inline-block';
+    }, 1000);
 }
 
 function hideAlertView() {
-
     var alert = document.querySelector('#alert-popover');
     alert.style.display = 'none';
-
 }
 
 function playSound() {
+    console.log('Hi');
     var sound = document.querySelector('[sound]');
+    console.log('hellos');
     sound.components.sound.playSound();
+    console.log('world');
 }
 
 function copyLink() {
-
     var input = document.querySelector('input');
         input.value = document.URL;
 
@@ -102,6 +97,5 @@ function copyLink() {
 
     var copyButton = document.querySelector('#button-copy-link');
     copyButton.className = "btn btn-success";
-    copyButton.textContent = "已複製";
-
+    copyButton.textContent = "Copied";
 }
